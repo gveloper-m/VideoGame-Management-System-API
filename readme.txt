@@ -57,7 +57,7 @@ php artisan key:generate
 ```sh
 php artisan serve
 ```
-Access the API at `http://127.0.0.1:8000`
+Access the API at `http://127.0.0.1:8000/api/`
 
 ## API Endpoints
 
@@ -85,20 +85,9 @@ Access the API at `http://127.0.0.1:8000`
 - **Update a Game**: `PUT /api/games/{id}`
 - **Delete a Game** (Admin only): `DELETE /api/games/{id}`
 
-## Postman API Documentation
-1. Open Postman and create a new collection named `Game API`.
-2. Add requests using the endpoints listed above.
-3. Use `Authorization: Bearer generated_token_here` for protected routes.
-4. Export the collection and include it in the project submission.
+## About postman
+In ../VideoGame-Management-System-API/Post Man Json there is a json file which include the test "runs" for the api
+To test it on your own see the json for data examples and header needs for each endpoint
 
-## Deployment
-For production deployment:
-```sh
-php artisan config:cache
-php artisan route:cache
-php artisan migrate --force
-```
 
-## License
-This project is licensed under the MIT License.
 
